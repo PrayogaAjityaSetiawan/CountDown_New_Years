@@ -20,7 +20,7 @@ const CountdownYear = () => {
     };
 
     return (
-        <div className="bg-[url('./src/assets/bg.jpg')] bg-center bg-cover bg-no-repeat relative w-full h-[100vh]">
+        <div className="bg-[url('/bg.jpg')] bg-center bg-cover bg-no-repeat relative w-full h-[100vh]">
             {showFireworks && (
                 <Fireworks
                     className="absolute top-0 left-0 w-full h-[100vh]"
