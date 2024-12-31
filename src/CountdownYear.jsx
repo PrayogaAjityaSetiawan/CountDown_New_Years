@@ -6,10 +6,10 @@ import CountdownCard from "./components/CountdownCard";
 const CountdownYear = () => {
     const [showFireworks, setShowFireworks] = useState(false);
     const [newYearMessage, setNewYearMessage] = useState(false);
-    const [massage, setMessage] = useState(["Countdown Tahun Baru 2025"]);
+    const [massage, setMessage] = useState(["Countdown Tahun Baru 2026"]);
 
     const newYears = () => {
-        const newYearsDate = new Date("January 1, 2025 00:00:00").getTime();
+        const newYearsDate = new Date("January 1, 2026 00:00:00").getTime();
         const now = new Date().getTime();
         const distance = newYearsDate - now;
         return distance;
@@ -29,7 +29,7 @@ const CountdownYear = () => {
             <div className="absolute flex flex-col items-center justify-center h-[100vh] w-full">
                 {newYearMessage ? (
                     <div className="bg-white/30 backdrop-blur-md p-10 rounded-xl">
-                        <h1 className="text-white text-5xl font-LobsterTwo font-extrabold text-center capitalize">Selamat tahun baru 2025🎉</h1>
+                        <h1 className="text-white text-5xl font-LobsterTwo font-extrabold text-center capitalize">Selamat tahun baru 2026🎉</h1>
                     </div>
                 ) : (
                     <>
